@@ -1,0 +1,12 @@
+<div class="h1">Persons & Cats</div>
+<br/>
+
+<div *ngFor="let person of result">
+  <div class="h5">{{person.gender}}</div>
+
+  <ul>
+    <li *ngFor="let cat of person.cats">
+      <span>{{cat.name}}</span>
+    </li>
+  </ul>
+</div>
